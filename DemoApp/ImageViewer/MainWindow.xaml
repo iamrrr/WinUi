@@ -4,15 +4,26 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ImageViewer"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     mc:Ignorable="d">
 
     <Grid>
-        <ScrollViewer HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right" Grid.Row="0">
+            <AppBarButton Icon="Folder" Label="Select Folder" Click="AppBarButton_Click"/>
+            <AppBarButton Icon="Edit" Label="Edit"/>
+            <AppBarButton Icon="Share" Label="Share"/>
+        </CommandBar>
+        <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto" Grid.Row="1">
             <ScrollViewer.Resources>
-                <UniformGridLayout x:Name="UnoformGridLayout" MinColumnSpacing="8" MinRowSpacing="8"/>
+                <UniformGridLayout x:Name="UnoformGridLayout" MinColumnSpacing="8" MinRowSpacing="8" ItemsJustification="SpaceEvenly"/>
                 <DataTemplate x:Key="ImageTemplate" x:DataType="local:ImageInfo">
-                    <Image Source="{x:Bind FullName}" Height="100" Width="100"/>
+                    <Button Click="Button_Click" DataContext="{x:Bind}">
+                        <Image Source="{x:Bind FullName}" Height="360" Width="360"/>
+                    </Button>
                 </DataTemplate>
             </ScrollViewer.Resources>
             <ItemsRepeater ItemsSource="{x:Bind ImagesRepo.Images}" Layout="{StaticResource UnoformGridLayout}" ItemTemplate="{StaticResource ImageTemplate}" />
