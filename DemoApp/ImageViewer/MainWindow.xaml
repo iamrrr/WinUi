@@ -1,0 +1,21 @@
+﻿<Window
+    x:Class="ImageViewer.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ImageViewer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <ScrollViewer HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+            <ScrollViewer.Resources>
+                <UniformGridLayout x:Name="UnoformGridLayout" MinColumnSpacing="8" MinRowSpacing="8"/>
+                <DataTemplate x:Key="ImageTemplate" x:DataType="local:ImageInfo">
+                    <Image Source="{x:Bind FullName}" Height="25" Width="25"/>
+                </DataTemplate>
+            </ScrollViewer.Resources>
+            <ItemsRepeater ItemsSource="{x:Bind ImagesRepo.Images}" Layout="{StaticResource UnoformGridLayout}" ItemTemplate="{StaticResource ImageTemplate}" />
+        </ScrollViewer>
+    </Grid>
+</Window>
