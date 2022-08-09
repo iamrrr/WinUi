@@ -12,7 +12,7 @@
             <ScrollViewer.Resources>
                 <UniformGridLayout x:Name="UnoformGridLayout" MinColumnSpacing="8" MinRowSpacing="8"/>
                 <DataTemplate x:Key="ImageTemplate" x:DataType="local:ImageInfo">
-                    <Image Source="{x:Bind FullName}" Height="25" Width="25"/>
+                    <Image Source="{x:Bind FullName}" Height="100" Width="100"/>
                 </DataTemplate>
             </ScrollViewer.Resources>
             <ItemsRepeater ItemsSource="{x:Bind ImagesRepo.Images}" Layout="{StaticResource UnoformGridLayout}" ItemTemplate="{StaticResource ImageTemplate}" />

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApp", "DemoApp\DemoApp.csproj", "{2CF6E294-E0E0-45F9-A697-E068D931F723}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageViewer", "ImageViewer\ImageViewer.csproj", "{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageViewer", "ImageViewer\ImageViewer.csproj", "{91F26C12-1FB1-451E-8362-1C8A3027A293}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,24 +35,18 @@ Global
 		{2CF6E294-E0E0-45F9-A697-E068D931F723}.Release|x86.ActiveCfg = Release|x86
 		{2CF6E294-E0E0-45F9-A697-E068D931F723}.Release|x86.Build.0 = Release|x86
 		{2CF6E294-E0E0-45F9-A697-E068D931F723}.Release|x86.Deploy.0 = Release|x86
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Debug|arm64.ActiveCfg = Debug|arm64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Debug|arm64.Build.0 = Debug|arm64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Debug|arm64.Deploy.0 = Debug|arm64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Debug|x64.ActiveCfg = Debug|x64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Debug|x64.Build.0 = Debug|x64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Debug|x64.Deploy.0 = Debug|x64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Debug|x86.ActiveCfg = Debug|x86
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Debug|x86.Build.0 = Debug|x86
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Debug|x86.Deploy.0 = Debug|x86
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Release|arm64.ActiveCfg = Release|arm64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Release|arm64.Build.0 = Release|arm64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Release|arm64.Deploy.0 = Release|arm64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Release|x64.ActiveCfg = Release|x64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Release|x64.Build.0 = Release|x64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Release|x64.Deploy.0 = Release|x64
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Release|x86.ActiveCfg = Release|x86
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Release|x86.Build.0 = Release|x86
-		{CEDA17E7-C37C-418D-85E8-B7B12878CF3F}.Release|x86.Deploy.0 = Release|x86
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Debug|arm64.ActiveCfg = Debug|arm64
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Debug|arm64.Build.0 = Debug|arm64
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Debug|x64.ActiveCfg = Debug|x64
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Debug|x64.Build.0 = Debug|x64
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Debug|x86.ActiveCfg = Debug|x86
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Debug|x86.Build.0 = Debug|x86
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Release|arm64.ActiveCfg = Release|arm64
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Release|arm64.Build.0 = Release|arm64
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Release|x64.ActiveCfg = Release|x64
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Release|x64.Build.0 = Release|x64
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Release|x86.ActiveCfg = Release|x86
+		{91F26C12-1FB1-451E-8362-1C8A3027A293}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
